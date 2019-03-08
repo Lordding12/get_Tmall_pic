@@ -128,8 +128,8 @@ class spider:
                 color = list(url.keys())[0].replace("\\","_")
             else:
                 color = list(url.keys())[0]
-            f = color + 1
-            imgs = open(self.name+"/颜色图/%s.jpg"%f,"wb")
+            #f = color + 1
+            imgs = open(self.name+"/颜色图/%s.jpg"%color,"wb")
             imgs.write(img.content)
             imgs.close()
  
